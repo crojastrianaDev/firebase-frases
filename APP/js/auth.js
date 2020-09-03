@@ -98,10 +98,17 @@ salir.addEventListener("click", async (event) => {
 auth.onAuthStateChanged(async (user) => {
     //si existe esta login
     if (user) {
+        //renderizamos las frases   //el snapshot esta trabajando en tiempo real con firebase
+        db.collection("frases").onSnapshot( (snapshot) =>{
+            setupFrases(snapshot.docs);//enviamos docuemtos frases firebase
+            estado(user); //enviamos user para la bio
+
+        } );
+      
         console.log(1);
-        estado(user); //si esta logueado enviuamos el user a el index estado
+         //si esta logueado enviuamos el user a el index estado
     }else{
         console.log(0);
         estado(user); 
     }
-})
+});

@@ -28,3 +28,24 @@ async function estado(user){
 
     }
 }
+
+//función para ver frases
+
+async function setupFrases(frases){
+
+    let html = "";
+
+    frases.forEach((doc) => { //vamos a mostrar las frases
+        const frase = doc.data();
+        const li = `
+        <li>
+            <div class="collapsible-header grey lighten-4">${frase.autor}</div>
+            <div class="collapsible-body white lighten-4">${frase.mensaje}</div>
+        </li>`;
+
+        html += li;
+    });
+
+    frasesUl.innerHTML = html;
+
+}

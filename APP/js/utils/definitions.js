@@ -8,3 +8,4 @@ const salir = document.getElementById("logout");//botón salir
 const loggedIn = document.querySelectorAll(".in");
 const loggedOut = document.querySelectorAll(".out");
 const detalleCuenta = document.querySelector(".detalles-perfil");
+const frasesUl =  document.querySelector(".frases");

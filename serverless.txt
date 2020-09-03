@@ -23,4 +23,5 @@ Creamos la app de web en firebase y la registramos.
 Configuramos firebase y Materializeccs.
 Habilitamos auth con correo.
 Creamos la base de datos.
-Debemos saber el estado de la autenticación//github.com/MarluanEspiritusanto/fire
+Debemos saber el estado de la autenticación para mostrar la cuenta y los items del navegador.
+mostrar las frases.
