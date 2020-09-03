@@ -19,3 +19,4 @@ https://github.com/MarluanEspiritusanto/fire-quotes
 Materializeccs
 
 Creamos un repo en github y lo clonamos con el loca.
+Creamos la app de web en firebase y la registramos.
