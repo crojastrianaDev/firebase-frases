@@ -93,3 +93,15 @@ salir.addEventListener("click", async (event) => {
     await salirYa();
     alert("Hasta luego");
 });
+
+//Estado de la autenticación
+auth.onAuthStateChanged(async (user) => {
+    //si existe esta login
+    if (user) {
+        console.log(1);
+        estado(user); //si esta logueado enviuamos el user a el index estado
+    }else{
+        console.log(0);
+        estado(user); 
+    }
+})

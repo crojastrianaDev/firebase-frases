@@ -9,21 +9,31 @@
 </head>
 
 <body>
-    <!--Modal Registro-->
+    <!--Navegador web-->
     <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a class="waves-effect waves-light btn modal-trigger" href="">Cuenta</a></li>
-            <li><a class="waves-effect waves-light btn modal-trigger" href="">Frases</a></li>
-            <li><a  class="waves-effect waves-light btn modal-trigger" href="#modal-login">Login</a></li>
-            <li><a class="waves-effect waves-light btn modal-trigger" href="#modal-registrar">Registrar</a></li>
-            <li><a href="" id="logout">Salir</a></li>
+            <li class="in" style="display: none;">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal-perfil">Cuenta</a>
+            </li>
+            <li class="in" style="display: none;">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modalCrear">Frases</a>
+            </li>
+            <li class="out" style="display: none;">
+                <a  class="waves-effect waves-light btn modal-trigger" href="#modal-login">Login</a>
+            </li>
+            <li class="out" style="display: none;">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal-registrar">Registrar</a>
+            </li>
+            <li class="in" style="display: none;">
+                <a href="" id="logout">Salir</a>
+            </li>
           </ul>
         </div>
       </nav>
 
-        <!--Modal Login-->
+        <!--Modal Registro-->
       <div class="modal" id="modal-registrar">
           <div class="modal-content">
               <h4>Registrarse</h4>
@@ -48,7 +58,28 @@
           </div>
       </div>
 
+      <!--Modal crear frase-->
+      <div class="modal" id="modalCrear">
+          <div class="modal-content">
+              <h4>Crear Frase</h4>
+              <br>
+              <form id="fraseForm">
+                <div class="input-field">
+                    <input type="text" id="autor" required autofocus>
+                    <label for="autor">Autor de la frase</label>
+                </div>
+                <div class="input-field">
+                    <textarea class="matealize-textarea" id="mensaje" cols="30" rows="10" required></textarea>
+                    <label for="content">Contenido de la frase</label>
+                </div>
+                <button class="btn yellow darken-2 z-depth-0">Crear</button>
+              </form>
 
+          </div>
+
+      </div>
+
+      <!--Modal login-->
       <div class="modal" id="modal-login">
         <div class="modal-content">
             <h4>Ingresar</h4>
@@ -69,6 +100,14 @@
         </div>
     </div>
 
+    <!--Modal cuenta Modal perfil  detalles-cuenta-->
+    <div id="modal-perfil" class="modal">
+        <div class="modal-content center-align">
+          <h4>Detalles de la cuenta</h4>
+          <br />
+          <div class="detalles-perfil"></div>
+        </div>
+      </div>
     
 
 
@@ -88,5 +127,6 @@
     <script src="js/config/materialize.config.js"></script>
     <script src="js/utils/definitions.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
