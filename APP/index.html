@@ -9,8 +9,70 @@
 </head>
 
 <body>
+    <!--Modal Registro-->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="waves-effect waves-light btn modal-trigger" href="">Cuenta</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="">Frases</a></li>
+            <li><a  class="waves-effect waves-light btn modal-trigger" href="#modal-login">Login</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger" href="#modal-registrar">Registrar</a></li>
+            <li><a href="" id="logout">Salir</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <!--Modal Login-->
+      <div class="modal" id="modal-registrar">
+          <div class="modal-content">
+              <h4>Registrarse</h4>
+              <br>
+              <form id="form-registro">
+                <div class="input-field inline">
+                    <input id="email-registro" type="email" class="validate" required autofocus>
+                    <label for="email-registro" >Email</label>
+                  </div>
+                  <div class="input-field inline">
+                    <input id="pass-registro" type="password" class="validate" required>
+                    <label for="pass-registro">Contraseña</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" id="signup-bio" required />
+                    <label for="signup-bio">Establecer bio</label>
+                  </div>
+                  <div>
+                      <button class="btn yellow darken-2 z-deph-0" type="submit">Registrarse</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+
+      <div class="modal" id="modal-login">
+        <div class="modal-content">
+            <h4>Ingresar</h4>
+            <br>
+            <form id="form-login">
+              <div class="input-field inline">
+                  <input id="email-login" type="email" class="validate" required autofocus>
+                  <label for="email-login" >Email</label>
+                </div>
+                <div class="input-field inline">
+                  <input id="pass-login" type="password" class="validate" required>
+                  <label for="pass-login">Contraseña</label>
+                </div>
+                <div>
+                    <button class="btn yellow darken-2 z-deph-0" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     
+
+
+
 
     <!-- Compiled and minified JavaScript Materializecss -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -24,5 +86,7 @@
 
     <script src="js/config/firebase.config.js"></script>
     <script src="js/config/materialize.config.js"></script>
+    <script src="js/utils/definitions.js"></script>
+    <script src="js/auth.js"></script>
 </body>
 </html>

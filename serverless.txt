@@ -1,6 +1,6 @@
 El serverless es una de las tecnologias cloud más importantes.
 
-¿QUÉ ES FIREBASE?
+¿QUÉ ES FIREBASE? Backend as a service
 Permite que los equipos de apps móviles y web alcancen el exito.
 Ellos tiene muchos servicios:
 REALTIME DATA BASE
@@ -20,3 +20,7 @@ Materializeccs
 
 Creamos un repo en github y lo clonamos con el loca.
 Creamos la app de web en firebase y la registramos.
+Configuramos firebase y Materializeccs.
+Habilitamos auth con correo.
+Creamos la base de datos.
+Debemos saber el estado de la autenticación//github.com/MarluanEspiritusanto/fire
