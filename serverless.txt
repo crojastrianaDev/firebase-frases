@@ -1,0 +1,20 @@
+El serverless es una de las tecnologias cloud más importantes.
+
+¿QUÉ ES FIREBASE?
+Permite que los equipos de apps móviles y web alcancen el exito.
+Ellos tiene muchos servicios:
+REALTIME DATA BASE
+ALMACENAMIENTO DE IMAGENES
+AUTENTICACIÓN
+MACHINE LEARNING
+
+
+PREPARACIONES:
+GIT
+GITHUB
+NODE Y NPM
+VSCODE
+FIREBASE
+https://github.com/MarluanEspiritusanto/fire-quotes
+
+Creamos un repo en github y lo clonamos con el loca.
