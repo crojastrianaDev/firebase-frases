@@ -58,3 +58,7 @@ Le decimos que ya tenemos una función : firebase deploy --only functions
 Son sin pago en node 8 pero en febrero 2021 ya no funciona
 
 **Ahora podemos agregar administradores a la app
+Despliegue.
+Si quiereo que solo loa dmin escriban seria:
+allow write: if request.auth.admin ==  true
+

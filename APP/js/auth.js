@@ -108,7 +108,7 @@ auth.onAuthStateChanged(async (user) => {
             setupFrases(snapshot.docs);//enviamos docuemtos frases firebase
             estado(user); //enviamos user para la bio
 
-        } );
+        }, err =>{} ); //no hacemos nada cuando tenemos el erro de no tener permisos por no estar In
         console.log(1);
          //si esta logueado enviuamos el user a el index estado
     }else{
