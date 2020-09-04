@@ -18,7 +18,7 @@
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal-perfil">Cuenta</a>
             </li>
             <li class="in" style="display: none;">
-                <a class="waves-effect waves-light btn modal-trigger" href="#modalCrear">Frases</a>
+                <a class="waves-effect waves-light btn modal-trigger" href="#crearFrase">Frases</a>
             </li>
             <li class="out" style="display: none;">
                 <a  class="waves-effect waves-light btn modal-trigger" href="#modal-login">Login</a>
@@ -32,6 +32,13 @@
           </ul>
         </div>
       </nav>
+
+      <!--Recibimos el correo para hacerlo admin-->
+      <form class="center-align admin-actions admin" id="adminForm" 
+      style="margin: 40px auto; max-width: 300px; display: none;">
+        <input type="email" placeholder="User email" id="admin-email" required />
+        <button class="btn-small yellow darken-2 z-depth-0">Hacerlo admin</button>
+      </form>
 
         <!--Modal Registro-->
       <div class="modal" id="modal-registrar">
@@ -58,26 +65,6 @@
           </div>
       </div>
 
-      <!--Modal crear frase-->
-      <div class="modal" id="modalCrear">
-          <div class="modal-content">
-              <h4>Crear Frase</h4>
-              <br>
-              <form id="fraseForm">
-                <div class="input-field">
-                    <input type="text" id="autor" required autofocus>
-                    <label for="autor">Autor de la frase</label>
-                </div>
-                <div class="input-field">
-                    <textarea class="matealize-textarea" id="mensaje" cols="30" rows="10" required></textarea>
-                    <label for="content">Contenido de la frase</label>
-                </div>
-                <button class="btn yellow darken-2 z-depth-0">Crear</button>
-              </form>
-
-          </div>
-
-      </div>
 
       <!--Modal login-->
       <div class="modal" id="modal-login">
@@ -109,6 +96,25 @@
         </div>
     </div>
 
+    <!--Modal crear frase-->
+    <div id="crearFrase" class="modal">
+        <div class="modal-content">
+          <h4>Create Frase</h4>
+          <br />
+          <form id="create-form">
+            <div class="input-field">
+              <input type="text" id="autor" required autofocus/>
+              <label for="autor">Autor</label>
+            </div>
+            <div class="input-field">
+              <textarea id="mensaje" class="materialize-textarea" required></textarea>
+              <label for="content">Frase</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Create</button>
+          </form>
+        </div>
+    </div>
+
     <!--Contenedor de las frases-->
     <div class="container" style="margin-top: 40px;">
         <ul class="collapsible z-depth-0 frases" style="border: none;"></ul>
@@ -132,6 +138,8 @@
     <script src="js/utils/definitions.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/frases.js"></script>
+    <script src="js/admin.js"></script>
     
 </body>
 </html>

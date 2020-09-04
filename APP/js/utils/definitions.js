@@ -9,3 +9,10 @@ const loggedIn = document.querySelectorAll(".in");
 const loggedOut = document.querySelectorAll(".out");
 const detalleCuenta = document.querySelector(".detalles-perfil");
 const frasesUl =  document.querySelector(".frases");
+
+//frase
+const formFrase= document.querySelector("#create-form");
+
+//admin forms
+const crearAdmin = document.querySelectorAll(".admin");
+const adminForm = document.querySelector("#adminForm");

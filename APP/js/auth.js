@@ -98,17 +98,22 @@ salir.addEventListener("click", async (event) => {
 auth.onAuthStateChanged(async (user) => {
     //si existe esta login
     if (user) {
+
+        //crear admin
+        const idTokenResult = await user.getIdTokenResult();
+        user.admin = idTokenResult.claims.admin;//si es user para mostrar el crear admin
+    
         //renderizamos las frases   //el snapshot esta trabajando en tiempo real con firebase
         db.collection("frases").onSnapshot( (snapshot) =>{
             setupFrases(snapshot.docs);//enviamos docuemtos frases firebase
             estado(user); //enviamos user para la bio
 
         } );
-      
         console.log(1);
          //si esta logueado enviuamos el user a el index estado
     }else{
         console.log(0);
+        setupFrases([]);//si no esta logueado no mostrar frases
         estado(user); 
     }
 });
