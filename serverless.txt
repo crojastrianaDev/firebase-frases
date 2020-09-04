@@ -66,3 +66,8 @@ Proyecto hosting: firebase init hosting
 le decimos que si público
 le dfecimos que no a url, por que ya tenemos index, com oen públic tenemos un index.jslo borramos
 y llevamos el nuestro con los js
+
+deploy hosting:  firebase deploy --only hosting
+
+https://console.firebase.google.com/project/fire-app-3b2b5/overview
+https://fire-app-3b2b5.web.app
