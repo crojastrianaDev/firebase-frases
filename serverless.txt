@@ -62,3 +62,7 @@ Despliegue.
 Si quiereo que solo loa dmin escriban seria:
 allow write: if request.auth.admin ==  true
 
+Proyecto hosting: firebase init hosting 
+le decimos que si público
+le dfecimos que no a url, por que ya tebnemos index
+
